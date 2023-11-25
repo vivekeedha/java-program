@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+class report
+{
+int n;
+int sno;
+String des;
+int rate;
+int qua;
+report()
+{
+Scanner u=new Scanner(System.in);
+System.out.println("Enter the number of products");
+n=u.nextInt();
+for(int i=0;i<n;i++)
+{
+System.out.println("Enter the serialno");
+sno=u.nextInt();
+System.out.println("Enter descryption");
+des=u.next();
+System.out.println("Enter the rate");
+rate=u.nextInt();
+System.out.println("Enter the quantity");
+qua=u.nextInt();
+System.out.println(" price is" +(rate*qua));
+}
+}
+}
+class bill
+{
+public static void main(String args[])
+{
+report a=new report();
+}
+}
