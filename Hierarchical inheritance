@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+class courses
+{
+void display()
+{
+System.out.println("I know java");
+}
+}
+class course extends courses
+{
+void display1()
+{
+System.out.println("I know C programming");
+}
+}
+class subj extends courses
+{
+void display2()
+{
+System.out.println("I know python");
+}
+}
+class code extends courses
+{
+void display3()
+{
+System.out.println("I know c++");
+}
+}
+class inh
+{
+public static void main(String args[])
+{
+code s=new code();
+s.display3();
+s.display();
+course s1=new course();
+s1.display1();
+subj s2=new subj();
+s2.display2();
+}
