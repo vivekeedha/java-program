@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+interface F
+{
+void display();
+}
+class M 
+{
+void display1()
+{
+System.out.println("It is hybrid inheritance");
+}
+}
+class C extends M implements F
+{
+public void display()
+{
+System.out.println("It is not an inheritance");
+}
+}
+class multi
+{
+public static void main(String args[])
+{
+C s=new C();
+s.display1();
+s.display();
+}
+}
